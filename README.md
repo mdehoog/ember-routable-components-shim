@@ -1,27 +1,58 @@
 # ember-routable-components-shim
 [![Build Status](https://travis-ci.org/mdehoog/ember-routable-components-shim.svg)](https://travis-ci.org/mdehoog/ember-routable-components-shim)
 
-This README outlines the details of collaborating on this Ember addon.
+[Ember.js](https://github.com/emberjs/ember.js) currently has initial support for Routable Components; available only for the `canary` version setting behind a feature flag.
+
+This addon adds exactly the same Routable Component implementation, but supports the `release` and `beta` versions.
 
 ## Installation
 
-* `git clone` this repository
-* `npm install`
-* `bower install`
+`ember install ember-routable-components-shim`
 
-## Running
+## Usage
 
-* `ember server`
-* Visit your app at http://localhost:4200.
+1. Create your routable component (instead of a controller). It must be a `isGlimmerComponent`:
 
-## Running Tests
+```javascript
+// components/post.js
+import Ember from 'ember';
 
-* `npm test` (Runs `ember try:testall` to test your addon against multiple Ember versions)
-* `ember test`
-* `ember test --server`
+export default Ember.Component.extend({
+  isGlimmerComponent: true,
+  componentProperty: 'componentValue'
+});
+```
 
-## Building
+```handlebars
+{{!-- templates/components/post.hbs --}}
+Model property: {{model.modelProperty}}<br/>
+Component property: {{componentProperty}}
+```
 
-* `ember build`
+2. Create a route that renders your routable component:
 
-For more information on using ember-cli, visit [http://www.ember-cli.com/](http://www.ember-cli.com/).
+```javascript
+// routes/post.js
+import Ember from 'ember';
+
+export default Ember.Route.extend({
+  renderTemplate: function () {
+    this.render({component: this.routeName}); //or you can explicitly name your component here
+  },
+  model: function () {
+    return {
+      modelProperty: 'modelValue'
+    };
+  }
+});
+```
+
+3. Add the route to `router.js` as normal:
+
+```javascript
+Router.map(function() {
+  this.route('post', { path: '/post' });
+});
+```
+
+Visiting `/post` should now render your routable component.
