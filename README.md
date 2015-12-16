@@ -1,4 +1,5 @@
 # ember-routable-components-shim
+[![Build Status](https://travis-ci.org/mdehoog/ember-routable-components-shim.svg)](https://travis-ci.org/mdehoog/ember-routable-components-shim)
 
 This README outlines the details of collaborating on this Ember addon.
 
