@@ -11,7 +11,7 @@ This addon adds exactly the same Routable Component implementation, but supports
 
 ## Usage
 
-1. Create your routable component (instead of a controller). It must be a `isGlimmerComponent`:
+Create your routable component (instead of a controller). It must be a `isGlimmerComponent`:
 
 ```javascript
 // components/post.js
@@ -29,7 +29,7 @@ Model property: {{model.modelProperty}}<br/>
 Component property: {{componentProperty}}
 ```
 
-2. Create a route that renders your routable component:
+Create a route that renders your routable component:
 
 ```javascript
 // routes/post.js
@@ -47,7 +47,7 @@ export default Ember.Route.extend({
 });
 ```
 
-3. Add the route to `router.js` as normal:
+Add the route to `router.js` as normal:
 
 ```javascript
 Router.map(function() {
