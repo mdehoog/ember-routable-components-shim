@@ -2,5 +2,5 @@
 'use strict';
 
 module.exports = {
-  name: 'ember-routable-components'
+  name: 'ember-routable-components-shim'
 };
