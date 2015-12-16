@@ -1,5 +1,5 @@
 # ember-routable-components-shim
-[![Build Status](https://travis-ci.org/mdehoog/ember-routable-components-shim.svg)](https://travis-ci.org/mdehoog/ember-routable-components-shim)
+[![Build Status](https://travis-ci.org/mdehoog/ember-routable-components-shim.svg)](https://travis-ci.org/mdehoog/ember-routable-components-shim) [![Ember Observer Score](http://emberobserver.com/badges/ember-routable-components-shim.svg)](http://emberobserver.com/addons/ember-routable-components-shim)
 
 [Ember.js](https://github.com/emberjs/ember.js) currently has initial support for Routable Components; available only for the `canary` version sitting behind a feature flag.
 
