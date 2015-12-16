@@ -1,7 +1,7 @@
 # ember-routable-components-shim
 [![Build Status](https://travis-ci.org/mdehoog/ember-routable-components-shim.svg)](https://travis-ci.org/mdehoog/ember-routable-components-shim)
 
-[Ember.js](https://github.com/emberjs/ember.js) currently has initial support for Routable Components; available only for the `canary` version setting behind a feature flag.
+[Ember.js](https://github.com/emberjs/ember.js) currently has initial support for Routable Components; available only for the `canary` version sitting behind a feature flag.
 
 This addon adds exactly the same Routable Component implementation, but supports the `release` and `beta` versions.
 
