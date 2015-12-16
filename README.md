@@ -50,6 +50,7 @@ export default Ember.Route.extend({
 Add the route to `router.js` as normal:
 
 ```javascript
+// router.js
 Router.map(function() {
   this.route('post', { path: '/post' });
 });
