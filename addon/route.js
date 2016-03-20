@@ -1,6 +1,7 @@
 import Ember from 'ember';
 import getOwner from 'ember-getowner-polyfill';
-const { assert, isNone, isEmpty, run, get, info } = Ember;
+const { isNone, isEmpty, run, get } = Ember;
+const { assert, info } = Ember.Logger;
 const EmberError = Ember.Error;
 
 function parentRoute(route) {

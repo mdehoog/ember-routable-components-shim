@@ -1,6 +1,7 @@
 import Ember from 'ember';
 import getOwner from 'ember-getowner-polyfill';
-const { get, info } = Ember;
+const { get } = Ember;
+const { info } = Ember.Logger;
 var require = Ember.__loader.require;
 var OutletKeyword = require('ember-htmlbars/keywords/outlet').default;
 var ViewNodeManager = require('ember-htmlbars/node-managers/view-node-manager').default;
