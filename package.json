@@ -1,6 +1,6 @@
 {
   "name": "ember-routable-components-shim",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Shim to enable Ember's routable components.",
   "directories": {
     "doc": "doc",
