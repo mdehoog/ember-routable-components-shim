@@ -3,7 +3,7 @@
 
 This addon adds support for routable components to Ember.js.
 
-All controllers can be replaced with routable components. Routable components do not retain state between transitions. The route's `model` attribute is available to the component, and actions not handled by the component will bubble up to the route.
+Controllers can be replaced with routable components. Routable components do not retain state between transitions. The route's `model` attribute is available to the component, and actions not handled by the component will bubble up to the route.
 
 Supports Ember.js version 2.7 and greater. If you need support for 2.6 and below, use [v0.0.2](https://github.com/mdehoog/ember-routable-components-shim/tree/v0.0.2) (see instructions on that tag).
 
