@@ -56,6 +56,20 @@ Router.map(function() {
 
 Visiting `/post` should now render your routable component.
 
+## Query params
+
+If you wish to pass query params to your route, you can add a controller which defines those query params. You can then access them from the `params` argument passed to the route's `model` function.
+
+```javascript
+// controllers/post.js
+import Ember from 'ember';
+
+export default Ember.Controller.extend({
+  queryParams: ['sort'],
+  sort: null
+});
+```
+
 ## Usage with pods
 
 If you use pods, you can keep each route and routable component/template in the same directory. Use the resolver included in this addon instead of the default:
